@@ -5,6 +5,8 @@ import java.util.Map;
 
 import org.geotools.data.Query;
 import org.geotools.data.simple.SimpleFeatureSource;
+import org.geotools.process.spatialstatistics.process.AreaProcess;
+import org.geotools.process.spatialstatistics.process.AreaProcessFactory;
 import org.junit.Test;
 
 public class BufferProcessTest extends SpatialStatisticsTestCase {

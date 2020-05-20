@@ -7,6 +7,9 @@ import org.geotools.data.Query;
 import org.geotools.data.simple.SimpleFeatureCollection;
 import org.geotools.data.simple.SimpleFeatureSource;
 import org.geotools.grid.hexagon.HexagonOrientation;
+import org.geotools.process.spatialstatistics.process.AreaProcessFactory;
+import org.geotools.process.spatialstatistics.process.HexagonProcess;
+import org.geotools.process.spatialstatistics.process.HexagonProcessFactory;
 import org.junit.Test;
 
 public class HexagonProcessTest extends SpatialStatisticsTestCase {

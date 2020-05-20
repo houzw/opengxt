@@ -11,6 +11,8 @@ import org.geotools.coverage.grid.io.GridCoverage2DReader;
 import org.geotools.coverage.grid.io.GridFormatFinder;
 import org.geotools.data.simple.SimpleFeatureCollection;
 import org.geotools.geometry.jts.JTSFactoryFinder;
+import org.geotools.process.spatialstatistics.process.RasterLinearLOSProcess;
+import org.geotools.process.spatialstatistics.process.RasterLinearLOSProcessFactory;
 import org.geotools.util.factory.GeoTools;
 import org.junit.Test;
 import org.locationtech.jts.geom.Coordinate;

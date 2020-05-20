@@ -16,31 +16,27 @@
  */
 package org.geotools.process.spatialstatistics.operations;
 
-import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 import org.geotools.data.simple.SimpleFeatureCollection;
 import org.geotools.data.simple.SimpleFeatureIterator;
-import org.geotools.process.spatialstatistics.SumLineLengthProcessFactory;
 import org.geotools.process.spatialstatistics.core.DataUtils;
 import org.geotools.process.spatialstatistics.core.FeatureTypes;
+import org.geotools.process.spatialstatistics.process.SumLineLengthProcessFactory;
 import org.geotools.process.spatialstatistics.storage.IFeatureInserter;
 import org.geotools.process.spatialstatistics.transformation.ReprojectFeatureCollection;
 import org.geotools.referencing.CRS;
 import org.geotools.util.Converters;
 import org.geotools.util.logging.Logging;
-import org.locationtech.jts.geom.Geometry;
-import org.locationtech.jts.geom.LineString;
-import org.locationtech.jts.geom.MultiLineString;
-import org.locationtech.jts.geom.MultiPolygon;
-import org.locationtech.jts.geom.Polygon;
+import org.locationtech.jts.geom.*;
 import org.opengis.feature.simple.SimpleFeature;
 import org.opengis.feature.simple.SimpleFeatureType;
 import org.opengis.feature.type.AttributeDescriptor;
 import org.opengis.filter.Filter;
 import org.opengis.parameter.InvalidParameterValueException;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
+
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * Calculate the total sum of line lengths for each feature of a polygon features.

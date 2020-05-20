@@ -1,11 +1,13 @@
 package org.geotools.process.spatialstatistics;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import org.geotools.data.Query;
 import org.geotools.data.simple.SimpleFeatureSource;
+import org.geotools.process.spatialstatistics.process.AreaProcess;
+import org.geotools.process.spatialstatistics.process.AreaProcessFactory;
 import org.junit.Test;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class AreaProcessTest extends SpatialStatisticsTestCase {
 

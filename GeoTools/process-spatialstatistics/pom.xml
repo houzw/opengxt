@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- =======================================================================    
-        Maven Project Configuration File                                        
-                                                                                
-        The Geotools Project                                                    
-            http://www.geotools.org/                                            
-                                                                                
-        Version: $Id$              
-     ======================================================================= -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0                                  http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <!-- =========================================================== -->
-  <!--     Module Description                                      -->
-  <!-- =========================================================== -->
+
   <groupId>org.geotools</groupId>
   <artifactId>gt-process-spatialstatistics</artifactId>
   <packaging>jar</packaging>
@@ -37,6 +27,7 @@
     <jt.version>1.5.0</jt.version>
     <ejml.version>0.34</ejml.version>
     <allow.test.skip>true</allow.test.skip>
+    <geotools.version>22.0</geotools.version>
     <allow.test.failure.ignore>true</allow.test.failure.ignore>
   </properties>
   
@@ -112,67 +103,67 @@
     <dependency>
       <groupId>org.geotools</groupId>
       <artifactId>gt-referencing</artifactId>
-      <version>${project.version}</version>
+      <version>${geotools.version}</version>
     </dependency>
     <dependency>
       <groupId>org.geotools</groupId>
       <artifactId>gt-main</artifactId>
-      <version>${project.version}</version>
+      <version>${geotools.version}</version>
     </dependency>
     <dependency>
       <groupId>org.geotools</groupId>
       <artifactId>gt-coverage</artifactId>
-      <version>${project.version}</version>
+      <version>${geotools.version}</version>
     </dependency>
     <dependency>
       <groupId>org.geotools</groupId>
       <artifactId>gt-process</artifactId>
-      <version>${project.version}</version>
+      <version>${geotools.version}</version>
     </dependency>
     <dependency>
       <groupId>org.geotools</groupId>
       <artifactId>gt-grid</artifactId>
-      <version>${project.version}</version>
+      <version>${geotools.version}</version>
     </dependency>
     <dependency>
       <groupId>org.geotools</groupId>
       <artifactId>gt-image</artifactId>
-      <version>${project.version}</version>
+      <version>${geotools.version}</version>
     </dependency>
     <dependency>
       <groupId>org.geotools</groupId>
       <artifactId>gt-jdbc</artifactId>
-      <version>${project.version}</version>
+      <version>${geotools.version}</version>
     </dependency>
     <dependency>
       <groupId>org.geotools</groupId>
       <artifactId>gt-brewer</artifactId>
-      <version>${project.version}</version>
+      <version>${geotools.version}</version>
     </dependency>
     <dependency>
       <groupId>org.geotools</groupId>
       <artifactId>gt-geotiff</artifactId>
-      <version>${project.version}</version>
+      <version>${geotools.version}</version>
     </dependency>
     <dependency>
       <groupId>org.geotools</groupId>
       <artifactId>gt-shapefile</artifactId>
-      <version>${project.version}</version>
+      <version>${geotools.version}</version>
     </dependency>
     <dependency>
       <groupId>org.geotools.xsd</groupId>
       <artifactId>gt-xsd-gml2</artifactId>
-      <version>${project.version}</version>
+      <version>${geotools.version}</version>
     </dependency>
     <dependency>
       <groupId>org.geotools.xsd</groupId>
       <artifactId>gt-xsd-gml3</artifactId>
-      <version>${project.version}</version>
+      <version>${geotools.version}</version>
     </dependency>
     <dependency>
       <groupId>org.geotools.xsd</groupId>
       <artifactId>gt-xsd-sld</artifactId>
-      <version>${project.version}</version>
+      <version>${geotools.version}</version>
     </dependency>
     
     <!-- EJML -->
@@ -494,19 +485,19 @@
     <dependency>
       <groupId>org.geotools</groupId>
       <artifactId>gt-sample-data</artifactId>
-      <version>${project.version}</version>
+      <version>${geotools.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.geotools</groupId>
       <artifactId>gt-property</artifactId>
-      <version>${project.version}</version>
+      <version>${geotools.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.geotools</groupId>
       <artifactId>gt-epsg-hsql</artifactId>
-      <version>${project.version}</version>
+      <version>${geotools.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -581,31 +572,7 @@
     
     <pluginManagement>
       <plugins>
-        <!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
-        <plugin>
-          <groupId>org.eclipse.m2e</groupId>
-          <artifactId>lifecycle-mapping</artifactId>
-          <version>1.0.0</version>
-          <configuration>
-            <lifecycleMappingMetadata>
-              <pluginExecutions>
-                <pluginExecution>
-                  <pluginExecutionFilter>
-                    <groupId>pl.project13.maven</groupId>
-                    <artifactId>git-commit-id-plugin</artifactId>
-                    <versionRange>[2.1.2,)</versionRange>
-                    <goals>
-                      <goal>revision</goal>
-                    </goals>
-                  </pluginExecutionFilter>
-                  <action>
-                    <ignore></ignore>
-                  </action>
-                </pluginExecution>
-              </pluginExecutions>
-            </lifecycleMappingMetadata>
-          </configuration>
-        </plugin>
+
       </plugins>
     </pluginManagement>
   </build>
